@@ -33,9 +33,9 @@
 		    "webviewId": "__W2A__new.7demo.cn",//首页
 		    "matchUrls": [
 		        {
-		            "href": "https://new.7demo.cn"
+		            "href": "http://new.7demo.cn"
 		        }, {
-		            "href": "https://new.7demo.cn/"
+		            "href": "http://new.7demo.cn/"
 		        }
 		    ],
 		    "webviewParameter": {
@@ -55,7 +55,7 @@
 		    "webviewId": "login",//登录页
 		    "matchUrls": [
 		        {
-		            "href": "https://new.7demo.cn/user/auth/login.html"
+		            "href": "http://new.7demo.cn/user/auth/login.html"
 		        }
 		    ],
 		    "webviewParameter": {
