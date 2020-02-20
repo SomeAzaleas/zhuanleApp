@@ -33,8 +33,8 @@
         },
         "File" : {},
         "Gallery" : {
-			"description": "系统相册"
-		},
+            "description" : "系统相册"
+        },
         "Geolocation" : {},
         "Invocation" : {
             "description" : "Native.js"
@@ -51,13 +51,12 @@
         "NativeUI" : {},
         "Navigator" : {},
         "NativeObj" : {},
-        "Push" : {},
-        "Share" : {}
+        "Push" : {}
     },
     "plus" : {
-		"wap2app": {  
-		    "launchError": "none"  
-		},
+        "wap2app" : {
+            "launchError" : "none"
+        },
         "secondwebview" : {
             "id" : "__W2A_CONTEXT_",
             "launch_path" : "_www/client_index.html",
@@ -202,19 +201,7 @@
                 }
             },
             "plugins" : {
-                "share" : {
-                    "qq" : {
-                        "appid" : "1104239732131"
-                    },
-                    "sina" : {
-                        "appkey" : "24121",
-                        "appsecret" : "3213123",
-                        "redirect_uri" : "312312"
-                    },
-                    "weixin" : {
-                        "appid" : "323232323262"
-                    }
-                },
+                "share" : {},
                 "speech" : {}
             }
         },
