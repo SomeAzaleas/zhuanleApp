@@ -7,10 +7,30 @@
 		<!--使用本地选项卡时，将如下两行代码注释取消-->
 		<!--<link rel="stylesheet" type="text/css" href="__wap2apptabbar.css" />
 		<script src="__wap2apptabbar.js" type="text/javascript" charset="utf-8"></script>-->
+		
 	</head>
 
 	<body>
-
+<script type="text/javascript">
+			document.addEventListener('plusready',function () {
+			    var idfa = '';
+			    try{
+			        if('iOS' == plus.os.name){  
+			            var manager = plus.ios.invoke('ASIdentifierManager', 'sharedManager');  
+			            if(plus.ios.invoke(manager, 'isAdvertisingTrackingEnabled')){  
+			                var identifier = plus.ios.invoke(manager, 'advertisingIdentifier');  
+			                idfa = plus.ios.invoke(identifier, 'UUIDString');  
+			                plus.ios.deleteObject(identifier);  
+			            }  
+			            plus.ios.deleteObject(manager);  
+			        }
+					plus.storage.setItem("idfa", idfa);
+			    }catch(e){  
+			        console.error('exception in getIdfa@dc-idfa!!'+e);  
+			        alert(e)  
+			    }  
+			})
+		</script>
 	</body>
 
 </html>
